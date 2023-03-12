@@ -1,0 +1,66 @@
+
+.meuBtn{
+    background-color: #45d9b4;
+    border-radius: 8px;
+
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.meuBtn:hover{
+    background-color: #319f83;
+    color: aliceblue;
+}
+
+.form-control-meu{
+    text-decoration: none;
+
+    border: 0.1 0.1 black;
+    padding: 2%;
+}
+
+.meu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 3%;
+}
+
+.btn-on-image {
+    position: relative;
+    bottom: 165px;
+    left: 30px;
+}
+
+.btn-on-image:active {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btnRed{
+    background-color: #f45347;
+    border-radius: 8px;
+
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.btnRed:hover{
+    background-color: #ca2403;
+    color: aliceblue;
+}
+
+.btn-on-image-right {
+    position: relative;
+    bottom: 100px;
+    left: 100px;
+}
+
+.btn-on-image-right:active {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
