@@ -1,0 +1,91 @@
+* {
+    box-sizing: content-box;
+
+    text-decoration: none;
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #121A24;
+}
+
+.pRed{
+    background-color: #FF4E4E;
+}
+
+.pWhite{
+    background-color: #ffffff;
+}
+
+.fontInter{
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.fontInterWhite{
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.fontJolly{
+    text-decoration: none;
+    font-family: 'Jolly Lodger', cursive;
+    font-size: 50px;
+    
+    color: aliceblue;
+}
+
+.fontInterFooter{
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: aliceblue;
+
+    font-size: 10px;
+    text-align: center;
+}
+
+.meuBtn{
+    background-color: #45d9b4;
+    border-radius: 8px;
+
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.meuBtn:hover{
+    background-color: #319f83;
+    color: aliceblue;
+}
+
+.form-control-meu{
+    text-decoration: none;
+
+    border: 0.1 0.1 black;
+    padding: 2%;
+}
+
+.meu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 3%;
+}
+
+.btn-on-image {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}
+
+.btn-on-image:active {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
