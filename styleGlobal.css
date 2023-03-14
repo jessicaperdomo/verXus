@@ -32,6 +32,12 @@ body{
     color: black;
 }
 
+.fontInterWhite2{
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
 .fontJolly{
     text-decoration: none;
     font-family: 'Jolly Lodger', cursive;

@@ -1,0 +1,36 @@
+.caixaLogin{
+    background-color: black;
+    border-radius: 25px;
+    width: 40%;
+    height: 60%;
+}
+
+.tamanhoLogin{
+    font-size: 20px;
+}
+
+.tamanho2{
+    font-size: 13px;
+}
+
+.btn-cor {
+    background-color: #24B983;
+}
+
+.sublinha{
+    text-decoration: underline
+}
+
+.form-limitado {
+    width: 45%;
+    margin: auto;
+}
+
+.arredonda {
+    border-radius: 130px;
+    padding: 3% 20%;
+}
+
+.arredondaCampo {
+    border-radius: 20px;
+}
