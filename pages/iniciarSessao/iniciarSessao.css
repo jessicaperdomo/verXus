@@ -1,8 +1,23 @@
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .caixaLogin{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     border-radius: 25px;
-    width: 40%;
-    height: 60%;
+
+    width: 50%;
+    max-width: 60%;
+
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .tamanhoLogin{
@@ -17,13 +32,21 @@
     background-color: #24B983;
 }
 
+.btn-cor:hover{
+    background-color: #1a8960;
+}
+
 .sublinha{
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 .form-limitado {
     width: 45%;
     margin: auto;
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
 }
 
 .arredonda {

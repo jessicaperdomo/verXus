@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Jolly+Lodger&display=swap" rel="stylesheet">
 </head>
-<body class="d-flex flex-column justify-content-center">
+<body>
     <nav class="navbar">
         <a href="../home/home.html" class="navbar-brand fontJolly">VERXUS</a>
         <div class="form_inline">
@@ -28,25 +28,24 @@
             <a href="./iniciarSessao.html" class="fontInter ml-4">INICIAR SESSÃO</a>
         </div>
     </nav>
-
-    <section class="container caixaLogin  mt-5">
-        <form class="form-limitado p-4">
-            <div class="form-group mt-5 ">
-                <label for="exampleInputEmail1" class="fontInterWhite2 tamanhoLogin">LOGIN</label>
-                <input type="email" class="form-control arredondaCampo mt-2" id="exampleInputEmail1" aria-describedby="emailHelp" >
-            </div>
-            <div class="form-group mt-4 ">
-                <label for="exampleInputPassword1" class="fontInterWhite2 tamanhoLogin">SENHA</label>
-                <input type="password" class="form-control arredondaCampo mt-2" id="exampleInputPassword1" >
-            </div>
-            <div class="text-center fontInterWhite2 tamanho2 mt-5">
-                <p>Ainda não tem uma conta? <span class="sublinha">Cadastre-se aqui.</span></p>
-            </div>
-            <div class = "text-center">
-                <button type="submit" class="btn btn-cor fontInterWhite2 tamanhoLogin arredonda mt-5">ENTRAR</button>
-            </div>
-        </form>
-    </section>
+    <div class="parent-container p-3">
+        <section class="caixaLogin d-flex flex-column justify-content-center align-items-center">
+            <form class="form-limitado justify-content-center align-items-center p-3">
+                <div class="form-group mt-3">
+                    <label for="exampleInputEmail1" class="fontInterWhite2 tamanhoLogin">LOGIN</label>
+                    <input type="email" class="form-control arredondaCampo mt-1" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1" class="fontInterWhite2 tamanhoLogin">SENHA</label>
+                    <input type="password" class="form-control arredondaCampo mt-1" id="exampleInputPassword1" >
+                </div>
+                <div class="text-center tamanho2 mt-2">
+                    <p class="fontInterWhite2">Ainda não tem uma conta? <a href="#" class="fontInterWhite2 sublinha">Cadastre-se aqui.</a></p>
+                </div>
+                <button type="submit" class="btn btn-cor fontInterWhite2 tamanhoLogin arredonda mt-2 mb-3">ENTRAR</button>
+            </form>
+        </section>
+    </div>
 
     <footer class="pt-4 pb-4">
         <p class="fontInterFooter">@unoeste_fipp-beatriz-jessica-leonardo-2023</p>
