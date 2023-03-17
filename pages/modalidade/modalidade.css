@@ -1,0 +1,50 @@
+.fontJollyMod{
+    text-decoration: none;
+    font-family: 'Jolly Lodger', cursive;
+    font-size: 50px;
+    
+    color: aliceblue;
+}
+
+.fontJollyMod2{
+    text-decoration: none;
+    font-family: 'Jolly Lodger', cursive;
+    font-size: 50px;
+    
+    color: #000000;
+}
+
+.fontJollyMod3{
+    text-decoration: none;
+    font-family: 'Jolly Lodger', cursive;
+    font-size: 25px;
+
+    color: #000000;
+}
+
+.btnMod{
+    text-decoration: none;
+    list-style: none;
+    border:none;
+    background-color: #121A24;
+
+    color: aliceblue;
+    
+}
+
+.btnMod:hover{
+    background-color: rgb(58, 199, 152);
+}
+
+.activeMod{
+    border: none;
+    background-color:  rgb(58, 199, 152);
+}
+
+.pWhiteMod{
+    background-color: aliceblue;
+}
+
+.t-align-jus{
+    text-align: justify;
+}
