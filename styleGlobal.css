@@ -46,3 +46,9 @@ body{
     font-size: 10px;
     text-align: center;
 }
+
+.botaoNav:hover{
+    list-style: none;
+    text-decoration: none;
+    color:aquamarine;
+}
