@@ -64,3 +64,47 @@
 .btn-on-image-right:active {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
+
+.pRed{
+    background-color: #FF4E4E;
+}
+
+.pWhite{
+    background-color: #ffffff;
+}
+
+.fontInterHome{
+    font-family: 'Inter', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.same-size {
+    width: 270px;
+    height: 23px;
+
+    padding: 1%;
+}
+
+.same-size2 {
+    width: 270px;
+    height: 40px;
+    
+    padding: 2%;
+    resize:none;
+}
+
+.btnHomeSubmit{
+    background-color: #5fb59f;
+    color:#ffffff;
+
+    border-radius: 8px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.btnHomeSubmit:hover{
+    background-color: #319f83;
+    color: aliceblue;
+}
