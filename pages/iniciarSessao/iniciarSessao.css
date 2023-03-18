@@ -49,6 +49,11 @@
     justify-content: center;
 }
 
+.inputL{
+    height: 2% !important;
+    background-color: #d6dcda;
+}
+
 .arredonda {
     border-radius: 130px;
     padding: 3% 13%;
@@ -56,4 +61,8 @@
 
 .arredondaCampo {
     border-radius: 20px;
+}
+
+.linkOtherLine:hover{
+    color: #24B983;
 }
