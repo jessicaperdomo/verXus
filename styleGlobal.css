@@ -38,6 +38,14 @@ body{
     color: aliceblue;
 }
 
+.fontJolly2{
+    text-decoration: none;
+    font-family: 'Jolly Lodger', cursive;
+    font-size: 50px;
+    
+    color: rgb(0, 0, 0);
+}
+
 .fontInterFooter{
     font-family: 'Inter', sans-serif;
     text-decoration: none;
@@ -50,5 +58,9 @@ body{
 .botaoNav:hover{
     list-style: none;
     text-decoration: none;
+    color:aquamarine;
+}
+
+.navAtiva{
     color:aquamarine;
 }
