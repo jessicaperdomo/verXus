@@ -1,0 +1,78 @@
+.align{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.caixaCad{
+    border-radius: 25px;
+
+    width: 50%;
+    max-width: 60%;
+
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+    margin-bottom: 3%;
+    padding: 3%;
+}
+
+.parent-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.form-cad{
+    display: block;
+    width: 90%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    border:1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+
+    margin-bottom: 2%;
+}
+
+.tamanhoCad{
+    font-size: 18px;
+}
+
+.linkOtherLine:hover{
+    color: #24B983;
+}
+
+.btn-cor {
+    background-color: #24B983;
+}
+
+.btn-cor:hover{
+    background-color: #1a8960;
+}
+
+.btn-cor2{
+    background-color: #34b7c136;
+}
+
+.btn-cor2:hover{
+    background-color: #fe9f6c9b;
+}
+
+.inputL{
+    height: 3% !important;
+    background-color: #D9D9D9;
+}
+
+.sublinha{
+    text-decoration: underline;
+}
+
+.inputLA{
+    height: 4% !important;
+    background-color: #D9D9D9;
+}
