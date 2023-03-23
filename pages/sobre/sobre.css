@@ -1,0 +1,21 @@
+.carousel-caption.colorBg{
+    background-color: rgba(0, 0, 0, 0.785);
+    bottom: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.estConhecer{
+    text-decoration: none;
+    list-style: none;
+    padding: 0%;
+
+    color: aliceblue;
+    margin-bottom: 1%;
+}
+
+.estConhecer:hover{
+    color: rgb(81, 205, 193);
+}
