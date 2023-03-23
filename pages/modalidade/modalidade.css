@@ -38,7 +38,7 @@
 
 .activeMod{
     border: none;
-    background-color:  rgb(58, 199, 152);
+    background-color:  rgb(75, 198, 157);
 }
 
 .pWhiteMod{
@@ -47,4 +47,17 @@
 
 .t-align-jus{
     text-align: justify;
+}
+
+.card-header{
+    background-color: #3c6393;
+}
+
+.estiloBtn{
+    color: white;
+}
+
+.estiloBtn:hover{
+    color: rgb(255, 255, 255);
+    font-weight: 800;
 }

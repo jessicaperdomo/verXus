@@ -30,21 +30,20 @@
     </nav>
 
     <section>
-        <div class="d-flex justify-content-around align-items-start ml-4 mt-3">
-            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <button class="nav-link btnMod activeMod" type="button" role="tab" aria-selected="true">1 V 1</button>
-              <button class="nav-link btnMod" type="button" role="tab" aria-selected="false">2 V 2</button>
-              <button class="nav-link btnMod" type="button" role="tab" aria-selected="false">3 V 3</button>
-              <button class="nav-link btnMod" type="button" role="tab" aria-selected="false">4 V 4</button>
-              <button class="nav-link btnMod" type="button" role="tab" aria-selected="false">5 V 5</button>
-            </div>
-            <div class="tab-content mb-4" id="v-pills-tabContent">
-              <div class="d-flex flex-column tab-pane fade show active" role="tabpanel" tabindex="0">
-                    <div>
-                        <img src="../../assets/1v1.svg" alt="img-1v1">
-                    </div>
-                    <div class=" d-flex pWhiteMod flex-column justify-content-center align-items-center">
-                        <h1 class="fontJollyMod2 mt-3">Sobre o 1 vs 1</h1>
+        <div class="accordion m-5" id="accordionExample">
+            <div class="card mx-auto">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link estiloBtn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    1 vs 1
+                  </button>
+                </h5>
+              </div> 
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body mx-auto w-50">
+                    <img class="img-fluid" src="../../assets/1v1.svg" alt="img-1v1">
+                    <div class="">
+                        <h1 class="fontJollyMod2 mt-3 text-center">Sobre o 1 vs 1</h1>
                         <p class="fontJollyMod3 text-center">
                             A chegada do novo modo pode auxiliar os jogadores no aquecimento de mira e<br>
                             deve ser muito similar ao sistema do mata-mata,<br>
@@ -65,15 +64,23 @@
                             ficará nesse ecossistema dependerá muito dos outros modos que vamos<br>
                              criar em breve e de sua recepção por parte dos jogadores.
                         </p>
-
                     </div>
+                </div>
               </div>
-              <div class="tab-pane fade " role="tabpanel" tabindex="0">
-                    <div>
-                        <img src="../../assets/2v2.svg" alt="img-2v2">
-                    </div>
-                    <div class=" d-flex pWhiteMod flex-column justify-content-center align-items-center">
-                        <h1 class="fontJollyMod2 mt-3">Sobre o 2 vs 2</h1>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed estiloBtn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    2 vs 2
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body mx-auto w-50">
+                    <img class="img-fluid" src="../../assets/2v2.svg" alt="img-2v2">
+                    <div class="">
+                        <h1 class="fontJollyMod2 mt-3 text-center">Sobre o 2 vs 2</h1>
                         <p class="fontJollyMod3 text-center">
                             A chegada do novo modo pode auxiliar os jogadores no aquecimento de mira e<br>
                             deve ser muito similar ao sistema do mata-mata,<br>
@@ -94,15 +101,23 @@
                             ficará nesse ecossistema dependerá muito dos outros modos que vamos<br>
                              criar em breve e de sua recepção por parte dos jogadores.
                         </p>
-
                     </div>
-               </div>
-              <div class="tab-pane fade" role="tabpanel" tabindex="0">
-                    <div>
-                        <img src="../../assets/3v3.svg" alt="img-3v3">
-                    </div>
-                    <div class=" d-flex pWhiteMod flex-column justify-content-center align-items-center">
-                        <h1 class="fontJollyMod2 mt-3">Sobre o 3 vs 3</h1>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed estiloBtn" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    3 vs 3
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body mx-auto w-50">
+                    <img class="img-fluid" src="../../assets/3v3.svg" alt="img-3v3">
+                    <div class="">
+                        <h1 class="fontJollyMod2 mt-3 text-center">Sobre o 3 vs 3</h1>
                         <p class="fontJollyMod3 text-center">
                             A chegada do novo modo pode auxiliar os jogadores no aquecimento de mira e<br>
                             deve ser muito similar ao sistema do mata-mata,<br>
@@ -126,41 +141,21 @@
 
                     </div>
                 </div>
-              <div class="tab-pane fade" role="tabpanel" tabindex="0">
-                    <div>
-                        <img src="../../assets/4v4.svg" alt="img-4v4">
-                    </div>
-                    <div class=" d-flex pWhiteMod flex-column justify-content-center align-items-center">
-                        <h1 class="fontJollyMod2 mt-3">Sobre o 4 vs 4</h1>
-                        <p class="fontJollyMod3 text-center">
-                            A chegada do novo modo pode auxiliar os jogadores no aquecimento de mira e<br>
-                            deve ser muito similar ao sistema do mata-mata,<br>
-                            porém dessa vez somente com um jogador de cada lado. <br>
-                        </p>
-                        <p class="fontJollyMod3 text-center">
-                            Queremos que o ecossistema dos modos de VALORANT continue sempre evoluindo.<br>
-                        </p>
-                        <p class="fontJollyMod3 text-center">
-                            Nosso objetivo é ter modos permanentes que sempre estarão disponíveis para<br> 
-                            os jogadores amarem e aproveitarem, modos rotativos que trarão novos <br> 
-                            conceitos e, talvez, até mesmo modos de tempo limitado que poderão ser meio... insanos,<br>
-                             por assim dizer.
-                        </p>
-
-                        <p class="fontJollyMod3 text-center">
-                            A categoria em que a Disputa da Spike <br>
-                            ficará nesse ecossistema dependerá muito dos outros modos que vamos<br>
-                             criar em breve e de sua recepção por parte dos jogadores.
-                        </p>
-
-                    </div>
+              </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed estiloBtn" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      4 vs 4
+                    </button>
+                  </h5>
                 </div>
-              <div class="tab-pane fade" role="tabpanel" tabindex="0">
-                    <div>
-                        <img src="../../assets/5v5.svg" alt="img-5v5">
-                    </div>
-                    <div class=" d-flex pWhiteMod flex-column justify-content-center align-items-center">
-                        <h1 class="fontJollyMod2 mt-3">Sobre o 5 vs 5</h1>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body mx-auto w-50">
+                    <img class="img-fluid" src="../../assets/4v4.svg" alt="img-4v4">
+                    <div class="">
+                        <h1 class="fontJollyMod2 mt-3 text-center">Sobre o 4 vs 4</h1>
                         <p class="fontJollyMod3 text-center">
                             A chegada do novo modo pode auxiliar os jogadores no aquecimento de mira e<br>
                             deve ser muito similar ao sistema do mata-mata,<br>
@@ -181,10 +176,50 @@
                             ficará nesse ecossistema dependerá muito dos outros modos que vamos<br>
                              criar em breve e de sua recepção por parte dos jogadores.
                         </p>
+
                     </div>
+                  </div>
                 </div>
             </div>
-        </div>
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed estiloBtn" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      5 vs 5
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                  <div class="card-body mx-auto w-50">
+                    <img class="img-fluid" src="../../assets/5v5.svg" alt="img-5v5">
+                    <div class="">
+                        <h1 class="fontJollyMod2 mt-3 text-center">Sobre o 5 vs 5</h1>
+                        <p class="fontJollyMod3 text-center">
+                            A chegada do novo modo pode auxiliar os jogadores no aquecimento de mira e<br>
+                            deve ser muito similar ao sistema do mata-mata,<br>
+                            porém dessa vez somente com um jogador de cada lado. <br>
+                        </p>
+                        <p class="fontJollyMod3 text-center">
+                            Queremos que o ecossistema dos modos de VALORANT continue sempre evoluindo.<br>
+                        </p>
+                        <p class="fontJollyMod3 text-center">
+                            Nosso objetivo é ter modos permanentes que sempre estarão disponíveis para<br> 
+                            os jogadores amarem e aproveitarem, modos rotativos que trarão novos <br> 
+                            conceitos e, talvez, até mesmo modos de tempo limitado que poderão ser meio... insanos,<br>
+                             por assim dizer.
+                        </p>
+
+                        <p class="fontJollyMod3 text-center">
+                            A categoria em que a Disputa da Spike <br>
+                            ficará nesse ecossistema dependerá muito dos outros modos que vamos<br>
+                             criar em breve e de sua recepção por parte dos jogadores.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+              
+          </div>
     </section>
 
     <footer class="pt-4 pb-4">
