@@ -108,3 +108,15 @@
     background-color: #319f83;
     color: aliceblue;
 }
+
+.erroValidacao {
+    color: #FF0707;
+}
+
+.icon-info {
+    width: 5%;
+}
+
+.text-danger {
+    margin: 0 !important;
+}

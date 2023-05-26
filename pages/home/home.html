@@ -78,14 +78,26 @@
                         <div class="d-flex flex-column justify-content-center align-items-center">
                             <label class="fontInterHome" for="nameUser">Nome</label>
                             <input class="same-size" type="text" name="name" id="nameUser" placeholder="Digite o seu nome" required>
-                                            
+                            <div class="erroValidacao d-flex flex-row justify-content-center align-items-center">
+                                <img class="icon-info" src="../../assets/validErro.svg" alt="">
+                                <p class="text-danger">Nome deve ter no mínimo 8 caracteres!</p>
+                            </div>
+                            
                             <label class="fontInterHome mt-2" for="emailUser">E-mail</label>
                             <input class="same-size" type="text" name="e-mail" id="emailUser" placeholder="E-mail" required>
+                            <div class="erroValidacao d-flex flex-row justify-content-center align-items-center">
+                                <img class="icon-info" src="../../assets/validErro.svg" alt="">
+                                <p class="text-danger">Nome deve ter no mínimo 8 caracteres!</p>
+                            </div>
 
                             <label class="fontInterHome mt-2" for="descUser">Descrição</label>
                             <textarea class="same-size2" matInput formControlName="formControlName" required
                             placeholder="Digite a sua descrição aqui"></textarea>
-
+                            <div class="erroValidacao d-flex flex-row justify-content-center align-items-center">
+                                <img class="icon-info" src="../../assets/validErro.svg" alt="">
+                                <p class="text-danger">Nome deve ter no mínimo 8 caracteres!</p>
+                            </div>
+                            
                             <button type="submit" class="btn btnHomeSubmit fontInterHome mt-3">ENVIAR</button>
                         </div>
                     </form> 
