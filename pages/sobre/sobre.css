@@ -1,3 +1,23 @@
+
+section {
+    padding: 50px 0; /* Ajuste o valor do padding conforme necessário */
+}
+
+.custom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.custom-container .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .carousel-caption.colorBg{
     background-color: rgba(0, 0, 0, 0.785);
     bottom: 0;
