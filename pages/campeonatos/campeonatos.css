@@ -1,24 +1,75 @@
-.bgAntNav{
-    background-color: rgba(7, 12, 31, 0.906);
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.championship {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.championship-name {
     color: aliceblue;
-    border: none;
+    font-family: "Nome da Fonte", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top:5px;
 }
 
-.bgAntNav:hover{
-    background-color: rgb(25, 186, 151);
+.championship-date {
     color: aliceblue;
-    font-weight: 900;
+    font-family: "Nome da Fonte", sans-serif;
+    font-size: 14px;
 }
 
-.carousel-caption.colorBg{
-    background-color: rgba(0, 0, 0, 0.785);
-    bottom: 0;
+.championship-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
-.det{
-    background-color: rgb(24, 136, 116);
+.btn-cor {
+    background-color: #24B983;
 }
 
-.det:hover{
-    background-color: rgb(14, 96, 81);
+.btn-cor:hover {
+    background-color: #1a8960;
+}
+
+.titleCamp {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.textCamp {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.linkOtherLine:hover{
+    color: #24B983;
+}
+
+.sublinha{
+    text-decoration: underline;
 }

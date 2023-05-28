@@ -1,0 +1,53 @@
+.bgAntNav{
+    background-color: rgba(7, 12, 31, 0.906);
+    color: aliceblue;
+    border: none;
+}
+
+.bgAntNav:hover{
+    background-color: rgb(25, 186, 151);
+    color: aliceblue;
+    font-weight: 900;
+}
+
+.carousel-caption.colorBg{
+    background-color: rgba(0, 0, 0, 0.785);
+    bottom: 0;
+}
+
+.det{
+    background-color: rgb(24, 136, 116);
+}
+
+.det:hover{
+    background-color: rgb(14, 96, 81);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #fafafa;
+    padding: 8px;
+}
+
+th {
+    background-color: #bc4343;
+}
+
+.titleCamp {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.textCamp {
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table th, table td {
+    color: white;
+}
+  
