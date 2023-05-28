@@ -133,10 +133,10 @@ function validarEstado() {
 function validarCidade() {
     let cidade = cidadeInput.value;
     let cidadeError = document.getElementById("cidadeError");
-    
+    var cidadeRegex = /^[A-Za-zÀ-ÿ\s]+$/;
     cidadeError.textContent = ""
 
-    if (cidade === "") {
+    if (!cidadeRegex.test(cidade)) {
         cidadeError.textContent = "Cidade inválida!";
         errorIcons[4].style.display = "inline";
         cidadeInput.classList.add("error-border");
