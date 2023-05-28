@@ -33,28 +33,52 @@
             <form class="justify-content-center align-items-center">
                     <div class="form-group mt-5">
                         <label for="exampleInputNome" class="fontInterWhite2 tamanhoCad">NOME</label>
-                        <input type="text" class="form-cad form-control inputL" id="exampleInputNome" placeholder="Insira seu nome" required>
+                        <input type="text" class="form-cad form-control inputL" id="exampleInputNome" placeholder="Insira seu nome">
                     </div>
+                    <p class="error-container">
+                        <span class="text-danger" id="nomeError"></span>
+                        <img class="error-icon" src="../../assets/validErro.svg" alt="Ícone de erro">
+                    </p>
                     <div class="form-group mt-3">
                         <label for="exampleInputEmail" class="fontInterWhite2 tamanhoCad">E-MAIL</label>
-                        <input type="email" class="form-cad form-control inputL" id="exampleInputEmail" placeholder="Insira seu e-mail" required>
+                        <input type="text" class="form-cad form-control inputL" id="exampleInputEmail" placeholder="Insira seu e-mail" >
                     </div>
+                    <p class="error-container">
+                        <span class="text-danger" id="emailError"></span>
+                        <img class="error-icon" src="../../assets/validErro.svg" alt="Ícone de erro">
+                    </p>
                     <div class="">
                         <label for="cep" class="fontInterWhite2 tamanhoCad">CEP</label>
-                        <input type="text" class="form-cad form-control inputL" id="cep" placeholder="Insira seu cep" required>
+                        <input type="text" class="form-cad form-control inputL" id="cep" placeholder="Insira seu cep" onblur="mCEP()">
                     </div>
+                    <p class="error-container">
+                        <span class="text-danger" id="cepError"></span>
+                        <img class="error-icon" src="../../assets/validErro.svg" alt="Ícone de erro">
+                    </p>
                     <div class="">
                         <label for="estadoInput" class="fontInterWhite2 tamanhoCad">ESTADO</label>
-                        <input type="text" class="form-cad form-control inputL" id="estadoInput" placeholder="Insira seu estado" required>
+                        <input type="text" class="form-cad form-control inputL" id="estadoInput" placeholder="Insira seu estado">
                     </div>
+                    <p class="error-container">
+                        <span class="text-danger" id="estadoError"></span>
+                        <img class="error-icon" src="../../assets/validErro.svg" alt="Ícone de erro">
+                    </p>
                     <div class="">
                         <label for="cidadeInput" class="fontInterWhite2 tamanhoCad">CIDADE</label>
-                        <input type="text" class="form-cad form-control inputL" id="cidadeInput" placeholder="Insira sua cidade" required>
+                        <input type="text" class="form-cad form-control inputL" id="cidadeInput" placeholder="Insira sua cidade">
                     </div>
+                    <p class="error-container">
+                        <span class="text-danger" id="cidadeError"></span>
+                        <img class="error-icon" src="../../assets/validErro.svg" alt="Ícone de erro">
+                    </p>
                     <div class="">
                         <label for="data" class="fontInterWhite2 tamanhoCad">DATA DE NASCIMENTO</label>
                         <input type="date" class="form-control form-cad inputL" id="data" required>
                     </div>
+                    <p class="error-container">
+                        <span class="text-danger" id="dataError"></span>
+                        <img class="error-icon" src="../../assets/validErro.svg" alt="Ícone de erro">
+                    </p>
                     <div class="">
                         <label for="inputSexo" class="fontInterWhite2 tamanhoCad">SEXO</label>
                         <select class="form-control form-cad inputL" id="inputSexo" required>
@@ -64,20 +88,32 @@
                             <option value="3">PREFIRO NÃO IDENTIFICAR</option>
                         </select>
                     </div>
+                    <p class="error-container">
+                        <span class="text-danger" id="sexoError"></span>
+                        <img class="error-icon" src="../../assets/validErro.svg" alt="Ícone de erro">
+                    </p>
                     <div class="">
                         <label for="telefone" class="fontInterWhite2 tamanhoCad">TELEFONE</label>
-                        <input type="text" class="form-control form-cad inputL" id="telefone" placeholder="(xx) xxxxx-xxxx " required>
+                        <input type="text" class="form-control form-cad inputL" id="telefone" placeholder="(xx) xxxxx-xxxx " onblur="mTel()">
                     </div>
+                    <p class="error-container">
+                        <span class="text-danger" id="telefoneError"></span>
+                        <img class="error-icon" src="../../assets/validErro.svg" alt="Ícone de erro">
+                    </p>
                     
                     <div class="mb-5">
                         <label for="inputPassword" class="fontInterWhite2 tamanhoLogin">SENHA</label>
-                        <input type="password" class="form-control form-cad inputL" placeholder="Insira sua senha" id="inputPassword" required>
+                        <input type="password" class="form-control form-cad inputL" placeholder="Insira sua senha" id="inputPassword">
                     </div>
+                    <p class="error-container">
+                        <span class="text-danger" id="senhaError"></span>
+                        <img class="error-icon" src="../../assets/validErro.svg" alt="Ícone de erro">
+                    </p>
                 <div class="justify-content-center align-items-center tamanho2 mb-5">
                     <p class="fontInterWhite2" mb-3>Já tem uma conta? <a href="../iniciarSessao/iniciarSessao.html" class="linkOtherLine fontInterWhite2 sublinha">Faça login aqui.</a></p>
                 </div>
                 <div class="text-center mb-5">
-                    <button type="submit" class="btn btn-cor fontInterWhite2">CADASTRAR</button>
+                    <button type="submit" class="btn btn-cor fontInterWhite2" id="submitButton">CADASTRAR</button>
                 </div>
             </form>
         </section>
@@ -90,6 +126,7 @@
         <p class="fontInterFooter">@unoeste_fipp-jessica-leonardo-2023</p>
     </footer>
 
+    <script src="scriptCadInit.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
