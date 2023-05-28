@@ -8,6 +8,7 @@ var telefoneInput = document.getElementById("telefone");
 var cidadedInput = document.getElementById("cidadeInput"); 
 var estadoInput = document.getElementById("estadoInput"); 
 var sexoInput = document.getElementById("inputSexo"); 
+var dataInput = document.getElementById("data"); 
 
 function validarNome() {
     let nameError = document.getElementById("nomeError");
@@ -167,6 +168,25 @@ function validarSexo(){
     }
 }
 
+function validarData(){
+    let data =dataInput.value;
+    let dataError = document.getElementById("dataError");
+    
+    dataError.textContent=""
+
+    if (data ===  "") {
+        dataError.textContent = "Insira uma data!";
+        errorIcons[5].style.display = "inline";
+        dataInput.classList.add("error-border");
+        return false;
+    } 
+    else {
+        errorIcons[5].style.display = "none";
+        dataInput.classList.remove("error-border");
+        return true;
+    }
+}
+
 function validarFormulario(event) {
     let isEmailValid = validarEmail();
     let isSenhaValid = validarSenha();
@@ -176,8 +196,9 @@ function validarFormulario(event) {
     let isEstadoValid = validarEstado();
     let isCidadeValid = validarCidade();
     let isSexoValid = validarSexo();
+    let isDataValid = validarData();
   
-    if (!isEmailValid || !isSenhaValid || !isNameValid || !isCepValid || !isTelefoneValid || !isEstadoValid || !isCidadeValid || !isSexoValid) {
+    if (!isEmailValid || !isSenhaValid || !isNameValid || !isCepValid || !isTelefoneValid || !isEstadoValid || !isCidadeValid || !isSexoValid || !isDataValid) {
         event.preventDefault();
         submitButton.disabled = true;
     } else {
@@ -194,6 +215,7 @@ telefoneInput.addEventListener('blur',validarFormulario,false);
 estadoInput.addEventListener('blur',validarFormulario,false);
 cidadeInput.addEventListener('blur',validarFormulario,false);
 sexoInput.addEventListener('blur',validarFormulario,false);
+dataInput.addEventListener('blur',validarFormulario,false);
 
 
 formContato.addEventListener("submit", validarFormulario,false);
