@@ -191,14 +191,12 @@ function validarFormulario(event) {
     let isEmailValid = validarEmail();
     let isSenhaValid = validarSenha();
     let isNameValid = validarNome();
-    let isCepValid = validarCEP();
     let isTelefoneValid = validarTelefone();
-    let isEstadoValid = validarEstado();
-    let isCidadeValid = validarCidade();
+    
     let isSexoValid = validarSexo();
     let isDataValid = validarData();
   
-    if (!isEmailValid || !isSenhaValid || !isNameValid || !isCepValid || !isTelefoneValid || !isEstadoValid || !isCidadeValid || !isSexoValid || !isDataValid) {
+    if (!isEmailValid || !isSenhaValid || !isNameValid || !isTelefoneValid || !isSexoValid || !isDataValid) {
         event.preventDefault();
         submitButton.disabled = true;
     } else {
@@ -210,26 +208,13 @@ function validarFormulario(event) {
 emailInput.addEventListener('blur', validarFormulario,false);
 senhaInput.addEventListener('blur', validarFormulario,false);
 nameInput.addEventListener('blur', validarFormulario,false);
-cepInput.addEventListener('blur',validarFormulario,false);
 telefoneInput.addEventListener('blur',validarFormulario,false);
-estadoInput.addEventListener('blur',validarFormulario,false);
-cidadeInput.addEventListener('blur',validarFormulario,false);
 sexoInput.addEventListener('blur',validarFormulario,false);
 dataInput.addEventListener('blur',validarFormulario,false);
 
-
 formContato.addEventListener("submit", validarFormulario,false);
   
-  
 submitButton.disabled = true;
-
-function mCEP () {
-    let cep = event.target.value;
-    cep = cep.replace(/\D/g, "")
-    cep = cep.replace(/^(\d{2})(\d)/, "$1.$2")
-    cep = cep.replace(/.(\d{3})(\d)/, ".$1-$2")
-    event.target.value = cep;
-}
 
 function mTel(){
     let numero = event.target.value;
@@ -237,4 +222,28 @@ function mTel(){
     numero = numero.replace(/^(\d{2})(\d)/g, "($1) $2"); 
     numero = numero.replace(/(\d)(\d{4})$/, "$1-$2"); 
     event.target.value = numero;
+}
+
+function buscarEnderecoPorCEP() {
+    var cep = cepInput.value;
+    cep = cep.replace(/\D/g, '');
+  
+    if (cep.length === 8) {
+      var url = 'https://viacep.com.br/ws/' + cep + '/json/';
+  
+      var request = new XMLHttpRequest();
+
+      request.open('GET', url, true);
+      request.onreadystatechange = function() {
+        if (request.readyState === 4 && request.status === 200) {
+          var response = JSON.parse(request.responseText);
+          if (!response.erro) {
+            estadoInput.value = response.uf;
+            cidadeInput.value = response.localidade;
+            validarEndereco();
+          }
+        }
+      };
+      request.send();
+    }
 }
