@@ -66,3 +66,25 @@
 .linkOtherLine:hover{
     color: #24B983;
 }
+
+.text-danger {
+    margin: 0 !important;
+}
+
+.error-container {
+    position: relative;
+}
+  
+.error-icon {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 16px;
+    height: 16px;
+    display: none;
+}
+
+.error-border {
+    border: 1px solid red;
+}
+  

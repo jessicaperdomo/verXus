@@ -75,10 +75,10 @@ function validarFormulario(event) {
     }
 }
 
-nameInput.addEventListener("blur", validarFormulario);
-emailInput.addEventListener("blur", validarFormulario);
-descInput.addEventListener("blur", validarFormulario);
+nameInput.addEventListener("blur", validarFormulario,false);
+emailInput.addEventListener("blur", validarFormulario,false);
+descInput.addEventListener("blur", validarFormulario,false);
 
-formContato.addEventListener("submit", validarFormulario);
+formContato.addEventListener("submit", validarFormulario,false);
 
 submitButton.disabled = true;

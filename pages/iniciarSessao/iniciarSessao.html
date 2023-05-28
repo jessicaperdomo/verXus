@@ -32,18 +32,26 @@
         <section class="caixaLogin d-flex flex-column justify-content-center align-items-center">
             <form class="form-limitado justify-content-center align-items-center p-3">
                 <div class="form-group mt-5 mb-4">
-                    <label for="exampleInputEmail1" class="fontInterWhite2 tamanhoLogin">LOGIN</label>
-                    <input type="email" class="form-control inputL arredondaCampo mt-1" id="exampleInputEmail1" placeholder="Insira seu usuário" aria-describedby="emailHelp" required>
+                    <label for="exampleInputEmail1" class="fontInterWhite2 tamanhoLogin" >LOGIN</label>
+                    <input type="text" class="form-control inputL arredondaCampo mt-1" id="exampleInputEmail1" placeholder="Insira seu usuário" aria-describedby="emailHelp">
                 </div>
+                <p class="error-container">
+                    <span class="text-danger" id="emailError"></span>
+                    <img class="error-icon" src="../../assets/validErro.svg" alt="Ícone de erro">
+                </p>
                 <div class="form-group mb-4">
                     <label for="exampleInputPassword1" class="fontInterWhite2 tamanhoLogin">SENHA</label>
-                    <input type="password" class="form-control inputL arredondaCampo mt-1" placeholder="Insira sua senha" id="exampleInputPassword1" required>
+                    <input type="password" class="form-control inputL arredondaCampo mt-1" placeholder="Insira sua senha" id="exampleInputPassword1" >
                 </div>
+                <p class="error-container">
+                    <span class="text-danger" id="senhaError"></span>
+                    <img class="error-icon" src="../../assets/validErro.svg" alt="Ícone de erro">
+                </p>
                 <div class="text-center tamanho2 mt-2 mb-3">
                     <p class="fontInterWhite2">Ainda não tem uma conta? <a href="../iniciarSessao/cadastrar.html" class="linkOtherLine fontInterWhite2 sublinha">Cadastre-se aqui.</a></p>
                 </div>
                 <div class="text-center mb-5">
-                    <button type="submit" class="btn btn-cor fontInterWhite2">ENTRAR</button>
+                    <button type="submit" class="btn btn-cor fontInterWhite2" id="submitButton" onclick="validaLogin()">ENTRAR</button>
                 </div>
             </form>
         </section>
@@ -56,6 +64,7 @@
         <p class="fontInterFooter">@unoeste_fipp-jessica-leonardo-2023</p>
     </footer>
 
+    <script src="scriptInit.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
