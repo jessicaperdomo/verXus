@@ -25,8 +25,11 @@ document.getElementById('addParticipantLink').addEventListener('click', function
       
       var name = row.childNodes[0].textContent;
       var phone = row.childNodes[1].textContent;
-    
-      window.open('editar.html?name=' + encodeURIComponent(name) + '&phone=' + encodeURIComponent(phone));
+      
+      document.getElementById('participantName').value = name;
+      document.getElementById('participantPhone').value = phone;
+
+      row.parentNode.removeChild(row);
     });
 
     var deleteLink = document.createElement('a');
