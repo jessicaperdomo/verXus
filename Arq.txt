@@ -1,0 +1,12 @@
+Obrigatório fazer :
+
+- Tornar não-editável (cidade e estado após encontrar CEP) : (iniciarSessao/cadastreAqui)
+- Fazer as funções de edição e exclusão de um item da tabela e adicionar ícones : (campeonatos)
+- Validação dos campos de adicionar participantes : (campeonatos)
+- Validar a quantidade de participante de acordo com o campeonato escolhido : (campeonatos)
+
+Melhorias (Caso dê tempo):
+
+- Colocar em um serve
+- Adicionar um banco
+- Menu com @media (responsividade)

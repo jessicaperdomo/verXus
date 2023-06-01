@@ -13,15 +13,34 @@ document.getElementById('addParticipantLink').addEventListener('click', function
 
     var optionsCell = document.createElement('td');
     var editLink = document.createElement('a');
+
     editLink.href = '#';
-    editLink.textContent = 'Editar';
+    editLink.textContent = 'Editar'; //trocar por icone
     optionsCell.appendChild(editLink);
     optionsCell.appendChild(document.createTextNode(' | '));
+
+    editLink.addEventListener('click', function(event) {
+      event.preventDefault();
+      var row = this.parentNode.parentNode;
+      
+      var name = row.childNodes[0].textContent;
+      var phone = row.childNodes[1].textContent;
+    
+      window.open('editar.html?name=' + encodeURIComponent(name) + '&phone=' + encodeURIComponent(phone));
+    });
+
     var deleteLink = document.createElement('a');
+    
     deleteLink.href = '#';
-    deleteLink.textContent = 'Excluir';
+    deleteLink.textContent = 'Excluir'; //trocar por icone
     optionsCell.appendChild(deleteLink);
 
+    deleteLink.addEventListener('click', function(event) {
+      event.preventDefault();
+      var row = this.parentNode.parentNode;
+      row.parentNode.removeChild(row);
+    });
+  
     row.appendChild(nameCell);
     row.appendChild(phoneCell);
     row.appendChild(optionsCell);
