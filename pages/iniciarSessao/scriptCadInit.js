@@ -5,7 +5,7 @@ var errorIcons = document.getElementsByClassName("error-icon");
 var nameInput = document.getElementById("exampleInputNome");
 var cepInput = document.getElementById("cep");
 var telefoneInput = document.getElementById("telefone"); 
-var cidadedInput = document.getElementById("cidadeInput"); 
+var cidadeInput = document.getElementById("cidadeInput"); 
 var estadoInput = document.getElementById("estadoInput"); 
 var sexoInput = document.getElementById("inputSexo"); 
 var dataInput = document.getElementById("data"); 
@@ -79,7 +79,7 @@ function validarCEP() {
     if (regexCEP.test(cep)) {
         errorIcons[2].style.display = "none";
         cepInput.classList.remove("error-border");
-        //buscarCEP(cep);
+        buscarCEP(cep);
         return true;
     } 
     else {
@@ -240,7 +240,9 @@ function buscarEnderecoPorCEP() {
           if (!response.erro) {
             estadoInput.value = response.uf;
             cidadeInput.value = response.localidade;
-            validarEndereco();
+  
+            estadoInput.readOnly = true;
+            cidadeInput.readOnly = true;
           }
         }
       };
