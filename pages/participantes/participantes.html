@@ -30,24 +30,30 @@
   </nav>
   <section class="container mt-5 mb-5">
     <h2 class="fontInter titleCamp">Participantes</h2>
-    <div class="d-flex justify-content-center align-items-center">
-      <form id="participantForm" class="form-inline">
+    <div class="form-group d-flex flex-column justify-content-center align-items-center">
+      <form id="participantForm" class="text-center">
         <div class="form-group d-flex flex-column">
           <label for="participantName" class="textCamp">NOME</label>
           <input type="text" class="form-control mr-3 mb-3" id="participantName" placeholder="Insira o nome">
+          <p class="error-container">
+            <span class="text-danger" id="nameError"></span>
+            <img class="error-icon" src="../../assets/validErro.svg" alt="Ícone de erro">
+          </p>
         </div>
         <div class="form-group d-flex flex-column">
           <label for="participantPhone" class="textCamp">TELEFONE</label>
-          <input type="text" class="form-control mr-3 mb-3" id="participantPhone" placeholder="(xx) xxxxx-xxxx">
+          <input type="text" class="form-control mr-3 mb-3" id="participantPhone" placeholder="(xx) xxxxx-xxxx" onblur="mTel()">
+          <p class="error-container">
+            <span class="text-danger" id="telefoneError"></span>
+            <img class="error-icon" src="../../assets/validErro.svg" alt="Ícone de erro">
+          </p>
         </div>
-        <a href="#" id="addParticipantLink">
-          <img src="../../assets/addBtn.svg" alt="Adicionar Participante">
-        </a>
+        <button type="submit" class="btn btn-cor fontInterWhite2" id="addParticipantLink">ADICIONAR</button>
       </form>
     </div>
   </section>
-  <section class="container mt-5 mb-3">
-    <h2 class="fontInter titleCamp">Lista de Participantes incluídos</h2>
+  <section class="container margin">
+    <h2 class="fontInter titleCamp">Participantes Incluídos</h2>
     <table id="participantsTable">
       <thead>
         <tr>
